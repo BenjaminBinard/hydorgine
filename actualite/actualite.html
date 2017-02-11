@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="Hydrogine travail à la conception de moteurs à hydrogène pour des compagnies ou des particuliers" />
+        <link rel="stylesheet" href="../script/style.css" />
+        <script type="text/javascript" src="../script/page.js"></script>
+        <title>Hydro'gine</title>
+    </head>
+<body>                
+		<header>
+                <div id="navigation">
+                    
+                    <h1>Hydro'gine</h1>
+                    <h2>Créateur de moteurs à hydrogène</h2>
+                    
+                </div>
+                <div id="logoes">
+                    <a id="logo"></a>
+                
+                <div id="barre_nav">
+                    <nav>
+                        <ul>
+                            <li><a href="../index/index.html" class = "button">Accueil</a></li>
+                            <li><a href="../presentation/presentation.html" class = "button">Que faisons nous ?</a></li>
+                            <li><a href="../contact/contact.html" class = "button">Nous contacter</a></li>
+                            <li><a href="../produit/produits.html" class = "button">Nos Produits</a></li>
+                            <li><a href="actualite.html" class = "surligne">Actualités</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                </div>
+                <div id = "avoir"> 
+                    <form action="/search" id="searchbar" method="get">
+                        <input id="search" name="q" type="text" placeholder="Rechercher" />
+                        <input id="search-btn" type="submit" value="Rechercher" />
+                    </form>
+                </div>
+
+            </header>
+            
+            <div id = "corps_presentation">
+                <a href="revue_presse.html" style="text-decoration:none;"><input type="button" value="Revue de presse"></a><br/>
+              <div id = "resume_revue">
+                  
+                  <p class="border-top" onclick= "revue('revue1', 'revue2', 'revue3', 'revue4', 'revue5');">
+                      <img class = "revue" alt = "Accord" src="image/accord_main.jpg"><br />
+                      Changement de cadre !
+                      
+                  </p><br />
+                  
+                  <p class="border-top" onclick= "revue('revue2', 'revue1', 'revue3', 'revue4', 'revue5');">
+                      <img class = "revue" alt = "Reunion" src="image/meeting.png"><br />
+                      Réunion : changement de cadre ?
+                      
+                  </p><br />
+                  <p class="border-top" onclick= "revue('revue3', 'revue2', 'revue1', 'revue4', 'revue5');">
+                      <img class = "revue" alt = "Signature" src="image/signature.jpg"><br />
+                      Accord de signature !
+                      
+                  </p><br />
+                  <p class="border-top" onclick= "revue('revue4', 'revue1', 'revue2', 'revue3', 'revue5');">
+                      <img class = "revue" alt = "Produit" src="image/moteur_revue.jpg"><br />
+                      Nouveau produit !
+                      
+                  </p><br />
+                  <p class="border-top" onclick= "revue('revue5', 'revue1', 'revue2', 'revue3', 'revue4');">
+                      <img class = "revue" alt = "Reunion" src="image/meeting.png"><br />
+                      Réunion : mise en ligne d'un moteur ?
+                      
+                  </p><br />
+              </div>
+            <div id = "revue1" class = "revue_complete">
+                  <h3>Nouveau Cadre</h3>
+                  <aside><img class = "revue" alt = "Accord" src="image/accord_main.jpg"><br /></aside>
+                  <p>Nous avons officiellement changer de cadre responsable des différents produits.
+                  A compter de la semaine prochaine, vous pourrez le rencontrer dans les locaux.</p>
+                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam 
+                rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+                eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, 
+                consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi 
+                consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
+                vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam 
+                rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+                eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, 
+                consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi 
+                consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
+                vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+            </div>
+            
+            <div id = "revue2" class = "revue_complete">
+                  <h3>Réunion</h3>
+                  <aside><img class = "revue" alt = "Reunion" src="image/meeting.png"><br /></aside>
+                  <p>Une réunion est prévu pour la semaine prochaine. 
+                  Cette réunion a pour but la décision d'un changeent de cadre</p>
+                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam 
+                rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+                eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, 
+                consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi 
+                consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
+                vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam 
+                rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+                eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, 
+                consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi 
+                consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
+                vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+            </div>
+            
+            <div id = "revue3" class = "revue_complete">
+                  <h3>Nouveau Partenaire</h3>
+                  <aside><img class = "revue" alt = "Signature" src="image/signature.jpg"><br /></aside>
+                  <p>Lors de notre dernière réunion nous avons signer un accord Dassault.
+                  Dès la semaine prochaine nous recevrons un nouveau produit à réaliser pour eux.</p>
+                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam 
+                rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+                eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, 
+                consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi 
+                consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
+                vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam 
+                rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+                eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, 
+                consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi 
+                consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
+                vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+            </div>
+            
+            <div id = "revue4" class = "revue_complete">
+                  <h3>Nouveau Produits</h3>
+                  <aside><img class = "revue" alt = "Produit" src="image/moteur_revue.jpg"><br /></aside>
+                  <p>Lors de notre dernière réunion nous avons décidé de mettre en ligne notre nouveau moteur.
+                  Ce moteur sera à la fin puissant et léger. Il présente le meilleur rendement actuel sur le marché.</p>
+                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam 
+                rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+                eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, 
+                consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi 
+                consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
+                vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam 
+                rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+                eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, 
+                consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi 
+                consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
+                vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+            </div>
+
+            
+            <div id = "revue5" class = "revue_complete">
+                  <h3>Réunion</h3>
+                  <aside><img class = "revue" alt = "Reunion" src="image/meeting.png"><br /></aside>
+                  <p>Une réunion est prévu pour lundi prochain. 
+                  Cette réunion a pour but la mise en ligne de 
+                  notre nouveau moteur à hydrogène.
+                  A la fois puissant et léger.</p>
+                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam 
+                rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+                eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, 
+                consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi 
+                consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
+                vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam 
+                rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+                eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, 
+                consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi 
+                consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
+                vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+            </div>
+
+</div>
+
+            <footer id = "footer_actualite">
+                <div id = "text_footer"><!-- position sur la gauche -->
+		            <a href = "../contact/contact.html" class = "afooter">Contact</a>
+		            <a href = "../abonnement/abonnement.html" class = "afooter">S'abonner</a>
+		            <a href = "../mention_legale/mention_legale.html" class = "afooter">Mention légales</a>
+
+		            <p>Le site a été réalisé par Benjamin Binard et Jérémy Boiselet</p>
+	               </div>
+
+	            <div id = "logo_footer"><!-- position float right -->
+                    <a href="http://www.facebook.com"><img src="../img_global/facebook.png" alt = "Facebook" width="40"></a>
+                    <a href="http://www.twitter.com"><img src="../img_global/twitter.png" alt = "Twitter" width="40"></a>
+                    <a href="https://www.youtube.com/watch?v=0pORYmv49rU"><img src="../img_global/tubeyou.png" alt = "Youtube" width="40"></a>
+                    <a href="https://fr.linkedin.com/"><img src="../img_global/inlinked.png" alt = "LinkedIn" width="40"></a>
+                </div>
+                
+            </footer>
+</body>
+</html>
