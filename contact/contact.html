@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="Hydrogine travail à la conception de moteurs à hydrogène pour des compagnies ou des particuliers" />
+        <link rel="stylesheet" href="../script/style.css" />
+        <script type="text/javascript" src="../script/page.js"></script>
+        <title>Hydro'gine</title>
+    </head>
+<body>                
+		<header>
+              <div id="logoes">
+                    <div id="navigation">
+                    <h1>Hydro'gine</h1>
+                    <h2>Créateur de moteurs à hydrogène</h2>
+                    </div>
+                    
+                    <a id="logo"></a>
+                    <div id="barre_nav">
+                    <nav>
+                        <ul>
+                            <li><a href="../index/index.html" class="button">Accueil</a></li>
+                            <li><a href="../presentation/presentation.html" class="button">Que faisons nous ?</a></li>
+                            <li><a href="contact.html" class="surligne">Nous contacter</a></li>
+                            <li><a href="../produit/produits.html" class = "button">Nos Produits</a></li>
+                            <li><a href="../actualite/actualite.html" class = "button">Actualités</a></li>
+                        </ul>
+                    </nav> 
+                </div>
+                </div>
+                    
+                <div id="avoir">
+
+                    <form action="/search" id="searchbar" method="get">
+                        <input id="search" name="q" type="text" placeholder="Rechercher" />
+                        <input id="search-btn" type="submit" value="Rechercher" />
+                    </form>
+                </div>
+
+                
+                
+            </header>
+            
+        <div id = "corps_presentation">    
+            <div class = "formulaire">
+            <button id = "particulier" onclick = "affiche_masque_form(this, 'formulaire_particulier', 'formulaire_entreprise');">Formulaire pour Entreprise</button>
+			</div>
+	        <form class = "formulaire" id = "formulaire_particulier" method = "post">
+		
+		        <h3>Formulaire pour les particuliers</h3>
+		        
+		        <label for="nom_p">Nom : </label><input onclick = "nom();" class="contact" type="text" name="nom" id="nom_p" /><br /><br />
+		        <label for="prenom_p">Prénom : </label><input type="text" name="prenom" id="prenom_p" /><br /><br />
+		        	
+	        	<label for="civilite">Etat-civil : </label>
+	        		<select name="civilite" id="civilite">
+	        			<option value="mme">Mme</option>
+	        			<option value="mr">M.</option>
+	        		</select><br /><br />
+		        <label for="pays_p">Pays : </label><input class="contact" type="text" name="pays" id="pays_p" /><br /><br />
+	        	<label for="email_p">Email : </label><input class="contact" type="email" name="email" id="email_p" /><br /><br />
+
+	        	Comment vous nous avez connus ?<br />
+	        	<input type="radio" name="info" value="social" id="social" checked /> <label for="social">Réseaux sociaux</label><br />
+				<input type="radio" name="info" value="pub" id="pub" /> <label for="pub">Publicités</label><br />
+	        	<input type="radio" name="info" value="autre" id="autre" /> <label for="autre">Autres</label><br /><br />
+
+	        	Autorisez-nous à utiliser les informations recueillit à des fins publicitaires ?<br />
+	        	<input type="radio" name="pub" value="oui" id="oui" checked /> <label for="oui">Oui</label><br />
+	        	<input type="radio" name="pub" value="non" id="non" /> <label for="non">Non</label><br /><br />
+
+				<img class="recapatcha" alt = "Recapatcha" src="../recapatcha/reca1.png" width="300" onclick="reca_okay()" style="cursor:pointer;"><br />
+
+				<label for="message" class="message">
+	        		Avez-vous des commentaires ?
+	        	</label>
+	        	<br />
+		
+	        	<textarea name="message" id="message" rows="5" cols="20"></textarea><br /> 
+
+	        	<input type="button" value= "Envoyer" onclick = "submit_part('email_p', 'pays_p', 'nom_p', 'prenom_p');"/>
+	        	<input type="button" value="Reset" onclick = "reset('formulaire_particulier');"/>
+
+	        </form>
+    
+        	<form class = "formulaire" id = "formulaire_entreprise" method = "post">
+
+	        	<h3>Formulaire pour les entreprises</h3>
+	        
+	        	<label for="nom_e">Nom : </label><input type="text" name="nom" id="nom_e" /><br /><br />
+	        	<label for="prenom_e">Prénom : </label><input type="text" name="prenom" id="prenom_e" /><br /><br />
+	        	
+	        	<label for="civilite">Etat-civil : </label>
+	        	
+	        		<select name="civilite" id="civilite_e">
+	        			<option value="mme">Mme</option>
+	        			<option value="mr">M.</option>
+	        		</select><br /><br />
+	        	<label for="pays_e">Pays : </label><input type="text" name="pays" id="pays_e" /><br /><br />
+	        	<label for="email_e">Email : </label><input type="email" name="email" id="email_e" /><br /><br />
+	        	
+	        	Comment vous nous avez connus ?<br />
+	        	<input type="radio" name="info" value="social" id="social_e" checked /> <label for="social_e">Réseaux sociaux</label><br />
+				<input type="radio" name="info" value="pub" id="pub_e" /> <label for="pub_e">Publicités</label><br />
+	        	<input type="radio" name="info" value="autre" id="autre_e" /> <label for="autre_e">Autres</label><br /><br />
+
+	        	Autorisez-nous à utiliser les informations recueillit à des fins publicitaires ?<br />
+	        	<input type="radio" name="pub" value="oui" id="oui_e" checked/> <label for="oui_e">Oui</label><br />
+	        	<input type="radio" name="pub" value="non" id="non_e" /> <label for="non_e">Non</label><br /><br />
+
+	        	<label for="nom_entreprise">Nom de l'entreprise : </label><input type="text" name="nom_entreprise" id="nom_entreprise" /><br /><br />
+	        	<label for="domaine">Domaine d'activité : </label><input type="text" name="domaine" id="domaine" /><br /><br />
+	        	<label for="email_entreprise">Email de l'entreprise : </label><input type="email" name="email_entreprise" id="email_entreprise" /><br /><br />
+	        	<label for="adresse">Adresse de l'entreprise : </label><input type="text" name="adresse" id="adresse" /><br /><br />
+	        	<label for="ville">Ville : </label><input type="text" name="ville" id="ville" /><br /><br />
+	        	<label for="code_postal">Code Postal : </label><input type="text" name="code_postal" id="code_postal" /><br /><br />
+			
+				<img class="recapatcha" alt = "Recapatcha" src="../recapatcha/reca1.png" width="300" onclick="reca_okay()" style="cursor:pointer;"><br />
+			
+				<label for="message" class="message">
+	        		Avez-vous des commentaires ?
+	        	</label>
+	        	<br />
+		
+	        	<textarea name="message" id="message_e" rows="5" cols="20"></textarea><br /> 
+
+	        	<input type="button" value="Envoyer" onclick = "submit_entreprise('email_e', 'pays_e', 'nom_e', 'prenom_e', 'code_postal', 'adresse', 'ville', 'email_entreprise', 'nom_entreprise', 'domaine');"/>
+	        	<input type="button" value="Reset" onclick = "reset('formulaire_entreprise');"/>
+
+        	</form>
+         </div>   
+            <footer>
+                <div id = "text_footer"><!-- position sur la gauche -->
+		            <a href = "../contact/contact.html" class="surligne_footer">Contact</a>
+		            <a href = "../abonnement/abonnement.html" class = "afooter">S'abonner</a>
+		            <a href = "../mention_legale/mention_legale.html" class = "afooter">Mention légales</a>
+
+		            <p>Le site a été réalisé par Benjamin Binard et Jérémy Boiselet</p>
+	               </div>
+
+	            <div id = "logo_footer"><!-- position float right -->
+                    <a href="http://www.facebook.com"><img src="../img_global/facebook.png" alt = "Facebook" width="40"></a>
+                    <a href="http://www.twitter.com"><img src="../img_global/twitter.png" alt = "Twitter" width="40"></a>
+                    <a href="https://www.youtube.com/watch?v=0pORYmv49rU"><img src="../img_global/tubeyou.png" alt = "Youtube" width="40"></a>
+                    <a href="https://fr.linkedin.com/"><img src="../img_global/inlinked.png" alt = "LinkedIn" width="40"></a>
+                </div>
+	            
+                
+            </footer>
+</body>
+</html>
